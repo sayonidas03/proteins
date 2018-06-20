@@ -82,7 +82,7 @@ with open('pdb_ids.engineered_mutation.08-06-2018.list', 'w') as f:
 
 mutations = "/pdb/entry/mutated_AA_or_NA"
 
-file= open('pdb_ids.engineered_mutation.08-06-2018.list', 'r')
+file= open('pdb_ids.engineered_mutation.list', 'r')
 
 lines = file.read().splitlines()
 listlen = len(lines)
@@ -102,7 +102,7 @@ def get_pdbs_with_engineered_muts(data, filename):
 
 import os;
 
-outfilename = 'pdb_ids.engineered_mutation.20-06-2018.data'
+outfilename = 'pdb_ids.engineered_mutation.data'
 
 if os.path.exists(outfilename):
     os.remove(outfilename)
